@@ -7,11 +7,12 @@ import { useGLTF, Clone, Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import axios from "axios";
+import pokeballImageUrl from "../src/assets/pokeball.png";
 
 export default function Machine(props) {
 
     const [pokemons, setPokemons] = useState([]);
-    const [imagePath, setImagePath] = useState("./src/assets/pokeball.png");
+    const [imagePath, setImagePath] = useState(pokeballImageUrl);
     useEffect(() => {
         const fetchData = async () => {
             try {
