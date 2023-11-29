@@ -3,6 +3,7 @@ import './index.css'
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import Experience from './Experience.jsx'
+import Footer from './Footer.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
@@ -17,5 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		>
 			<Experience />
 		</Canvas>
+		<Footer />
 	</React.StrictMode>,
 )
