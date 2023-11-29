@@ -81,6 +81,8 @@ export default function Machine(props) {
         specialDefenseStat.current.innerHTML = pokemons[id - 1].special_defense.toString().padStart(3, '0');
 
         setImagePath(pokemons[id - 1].image)
+
+        playCry(pokemons[id - 1].id)
     }
 
     const clickUpButtonEvent = (event) => {
@@ -89,6 +91,12 @@ export default function Machine(props) {
 
     const clickDownButtonEvent = (event) => {
         event.object.position.z = 0.005
+    }
+
+    function playCry(id) {
+
+        const audio = new Audio('/audio/cries/' + id + '.mp3')
+        audio.play()
     }
 
     useFrame((state, delta) => {
