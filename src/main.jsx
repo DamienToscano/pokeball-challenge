@@ -18,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		>
 			<Experience />
 		</Canvas>
+		<p className="info">Turn your sound on 🔊</p>
 		<Footer />
 	</React.StrictMode>,
 )
