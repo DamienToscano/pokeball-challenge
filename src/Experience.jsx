@@ -7,7 +7,7 @@ export default function Experience() {
     return <>
 
         <color attach="background" args={["#111111"]} />
-        <Perf position="top-left" />
+        {/* <Perf position="top-left" /> */}
 
         <OrbitControls makeDefault />
 
