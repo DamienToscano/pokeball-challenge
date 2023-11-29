@@ -9,7 +9,7 @@ export default function Experience() {
         <color attach="background" args={["#111111"]} />
         {/* <Perf position="top-left" /> */}
 
-        <OrbitControls makeDefault />
+        {/* <OrbitControls makeDefault /> */}
 
         <Stage
             environment={null}
